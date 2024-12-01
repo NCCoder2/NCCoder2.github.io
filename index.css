@@ -12,8 +12,9 @@
 }
 
 body {
-    padding:0;
-    margin:0;
+    padding: 0;
+    overflow:hidden;
+    margin: 0;
 }
 
 .blob-bg {
@@ -22,13 +23,10 @@ body {
     left: -200px;
     width: 45%;
     height: 100vh;
-    background: linear-gradient(135deg,
-        var(--accent-color),
-        var(--tab-border),
-        var(--blob-color));
+    background: linear-gradient(135deg, var(--accent-color), var(--tab-border), var(--blob-color));
     border-radius: 50%;
     filter: blur(100px);
-    animation: blobLoadAnimation 15s ease-in-out infinite alternate;
+    animation: blobLoadAnimation 5s ease-in-out infinite alternate, bgMovement 10s linear infinite;
     transition: width 1s ease, height 1s ease;
 }
 
@@ -46,14 +44,22 @@ body {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.1) rotate(5deg);
+        transform: scale(1.2) rotate(45deg);
+    }
+}
+
+@keyframes bgMovement {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
     }
 }
 
 .container {
     text-align: center;
     margin: 0 auto;
-    margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
@@ -112,7 +118,6 @@ strong {
     justify-content: center;
     align-items: center;
 }
-
 
 .social {
     font-family: "Montserrat", sans-serif;
@@ -204,7 +209,7 @@ button:focus {
     bottom: 10px;
     right: 10px;
     width: 65px;
-    padding:5px;
+    padding: 5px;
     height: 30px;
     background: rgb(113, 163, 249);
     border-radius: 10px;
