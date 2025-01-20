@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NC</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="icon" href="imgs/favicon.png" type="image/x-icon" />
-    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js"></script>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -22,56 +18,268 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="blob-bg"></div>
-        <h1>x-nc.me</h1>
-        <p><strong>14</strong> year old full stack developer with experience in multiple languages.<br>Founder & Chief Executive Officer of <a href="https://phantom.lol" class="url">Shadow</a>, a proxy website, reaching <strong>10M+</strong>views.</p>
-        <div class="socials">
-            <a class="social" href="https://open.spotify.com/user/31fin7lphcyteohpo42vrejyxx2y?si=90c1ce3927ff4559"
-                target="_blank" data-name="spotify">
-                <i class="fa-brands fa-spotify fa-lg"></i> 
-            </a>
-            <a class="social" href="https://github.com/NCCoder2" target="_blank" data-name="github">
-                <i class="fa-brands fa-github fa-lg"></i> 
-            </a>
-            <a class="social" href="https://discord.com/users/988627828234932254" target="_blank" data-name="discord">
-                <i class="fa-brands fa-discord fa-lg"></i> 
-            </a>
-            <a class="social" href="t" target="_blank" data-name="tiktok">
-                <i class="fa-brands fa-tiktok fa-lg"></i> 
-            </a>
-            <a class="social" target="_blank" data-name="gmail">
-                <i class="fa-brands fa-google fa-lg"></i> 
-            </a>
+    <div class="navbar">
+        <div class="logo">
+            <img src="imgs/discordpfp.png">
+            <h2>NC</h2>
         </div>
-        <div id="waveform"></div>
+        <div class="nav-links">
+            <div class="sections">
+                <a href="#aboutme">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="socials">
+                <a href="https://discord.com/users/988627828234932254"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/NCCoder2"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.tiktok.com/@nc.discord"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="imgs/discordpfp.png">
+        <h1>👋 Hello, I'm NC</h1>
+        <div class="roles">
+            <div class="role">
+                <i class="fa-solid fa-code"></i>
+                <p>Web Developer</p>
+            </div>
+            <div class="role">
+                <i class="fa-solid fa-server"></i>
+                <p>Backend Developer</p>
+            </div>
+            <div class="role">
+                <i class="fa-regular fa-star"></i>
+                <p>Fortnite</p>
+            </div>
+            <div class="role">
+                <i class="fa-solid fa-meteor"></i>
+                <p>Owner of Shadow</p>
+            </div>
+        </div>
+    </div>
+    <div id="aboutme"></div>
+    <div class=aboutme-container>
+        <h1>About Me</h1>
+        <div class="aboutme">
+            <div class="abt-section">
+                <img
+                    src="https://media.istockphoto.com/id/1463288473/photo/los-angeles-ca.jpg?s=612x612&w=0&k=20&c=_3wzA7ZytyFQaBMvk1p_ZWlRAVcLA9CzYZ1M3reqtEw=">
+                <div class="text">
+                    <h1 class="heading">🏙️ LA</h1>
+                    <p class="description">Born and raised in the heart of the Golden State. <span class="flash-la">Los
+                            Angeles, California</span>-for over a decade. I'm currently based in <span
+                            class="flash-dallas">Dallas, Texas.</span></p>
+                </div>
+            </div>
+            <div class="abt-section">
+                <img src="https://i.insider.com/60144316a7c0c4001991dde6?width=800&format=jpeg&auto=webp">
+                <div class="text">
+                    <h1 class="heading">💻 Developing</h1>
+                    <p class="description">Experienced in Python, Node.JS, HTML, CSS, JS, and React.</p>
+                </div>
+            </div>
+            <div class="abt-section">
+                <img
+                    src="https://s.france24.com/media/display/ef9d4eaa-d52b-11ea-9b9a-005056bff430/w:1280/p:16x9/fe2ab5d37c3fdcede9ff51149e676879e322056a.jpg">
+                <div class="text">
+                    <h1 class="heading">👀 Tiktok</h1>
+                    <p class="description">I'm a D1 Tiktok User with 28,000+ minutes on Tiktok (19 days) within the last
+                        6
+                        months. <br>🙏 Thank God <span class="flash-trump">TRUMP</span> SAVED IT</p>
+                </div>
+            </div>
+            <div class="abt-section">
+                <img src="https://news.xbox.com/en-us/wp-content/uploads/sites/2/2020/08/FortniteS4_HERO.jpg">
+                <div class="text">
+                    <h1 class="heading">🕹️ Fortnite</h1>
+                    <p class="description">I've been playing fortnite ever since <span class="flash-marvel">Chapter 2
+                            Season
+                            4: Marvel</span>, which released on August 27, 2020. It's been over 1600 days. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
 
+            <!-- Shadow -->
+            <div class="project-card">
+                <div class="project-basic">
+                    <img class="project-icon" src="imgs/shadow.webp">
+                    <div class="project-name">Shadow</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Founder</div>
+                        <div class="role">CEO</div>
+                        <div class="role">Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Fast, Simple, and well-designed tabbed proxy</li>
+                        <li class="bullet">Over 11M+ Visits</li>
+                        <li class="bullet">Reaching users worldwide!</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://discord.gg/goshadow" target="_blank">Discord</a>
+                        <a href="https://phantom.lol">Website</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Shadow AI-->
+            <div class="project-card">
+                <div class="project-basic">
+                    <img class="project-icon" src="imgs/shadow.webp">
+                    <div class="project-name">ShadowAI</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Creator</div>
+                        <div class="role">Lead Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">AI Discord chat bot</li>
+                        <li class="bullet">Extremely mean personality</li>
+                        <li class="bullet">Supports high level text generation with GPT-4</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1187914596187648050&permissions=9208410262592&integration_type=0&scope=bot"
+                            target="_blank">Invite Bot</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shadow Dispenser-->
+            <div class="project-card">
+                <div class="project-basic">
+                    <img class="project-icon" src="imgs/shadow.webp">
+                    <div class="project-name">Shadow Dispenser</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Creator</div>
+                        <div class="role">Lead Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Discord link dispenser bot</li>
+                        <li class="bullet">Supports logging, types, link history</li>
+                        <li class="bullet">Easy & basic to setup. Utilizes MongoDB</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://github.com/ShadowDevLabs/DispenserV2" target="_blank">View Github</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Shadow Adv Dispenser -->
+             <div class="project-card">
+                <div class="project-basic">
+                    <img class="project-icon" src="imgs/shadow.webp">
+                    <div class="project-name">Shadow AdvDispenser</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Creator</div>
+                        <div class="role">Lead Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Discord Link-Creating Bot</li>
+                        <li class="bullet">Works w/ Lightspeed, Blocksi, and Palo Alto</li>
+                        <li class="bullet">Auto creates links that are unblocked for your blocker on the spot!</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1326766277729058980&permissions=9208410262593&integration_type=0&scope=bot" target="_blank">Invite Bot</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Minecraft Online Bot-->
+            <div class="project-card">
+                <div class="project-basic" style="background-color: var(--green);">
+                    <img class="project-icon" src="imgs/minecraft_logo_icon_168974-modified.png">
+                    <div class="project-name">Online Uptime MC Bot</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Creator</div>
+                        <div class="role">Lead Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Minecraft Server Joiner</li>
+                        <li class="bullet">Allows you to keep Aternos servers up 24/7</li>
+                        <li class="bullet">Easy setup & configuration.</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://github.com/NCCoder2/OnlineMCBot" target="_blank">View Github</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Minecraft Online Bot-->
+            <div class="project-card">
+                <div class="project-basic" style="background-color: #000626;">
+                    <img class="project-icon" src="imgs/astro.webp">
+                    <div class="project-name">Astro</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Creator</div>
+                        <div class="role">Lead Developer</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Web Interface Proxy</li>
+                        <li class="bullet">Fast, Simple, Lightweight</li>
+                        <li class="bullet">Collection of over 400 Games</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://github.com/ShadowDevLabs/Astro" target="_blank">View Github</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Calorie Counter-->
+            <div class="project-card">
+                <div class="project-basic" style="background-color: #2d0013;">
+                    <img class="project-icon" src="imgs/calories.webp">
+                    <div class="project-name">Calorie Counter</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Co Developed</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Identifies the foods & calories in images</li>
+                        <li class="bullet">Utilizes Gemini Flash model</li>
+                        <li class="bullet">Image to Caption Logic</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://github.com/NCCoder2/CalorieCounter" target="_blank">View Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3kh0 v5 -->
+            <div class="project-card">
+                <div class="project-basic" style="background-color: #3a017f;">
+                    <img class="project-icon" src="imgs/3kh0.png">
+                    <div class="project-name">3kh0v5</div>
+                </div>
+                <div class="info">
+                    <div class="roles">
+                        <div class="role">Co Developed</div>
+                    </div>
+                    <div class="bullets">
+                        <li class="bullet">Most popular unblocked games site</li>
+                        <li class="bullet">v5 made after EchoDev, original creator quit.</li>
+                        <li class="bullet">Now features Ultraviolet</li>
+                    </div>
+                    <div class="btns">
+                        <a href="https://github.com/echo-dev-labs/3kh0v5" target="_blank">View Github</a>
+                        <a href="https://v5.3kh0.net/" target="_blank">View Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="about">
-    </div>
-    <script>
-        var wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: '#3B82F6',
-            progressColor: '#1D4ED8',
-            height: 20,
-            width: 55,
-            barWidth: 2,
-        });
-    
-        wavesurfer.load('music.mp3');
-    
-        wavesurfer.on('ready', function () {
-            var duration = wavesurfer.getDuration(); 
-            var startTime = 6 / duration;
-            wavesurfer.seekTo(startTime); 
-            wavesurfer.play();
-        });
-    </script>
-    
-    
-      
 </body>
 
 </html>
