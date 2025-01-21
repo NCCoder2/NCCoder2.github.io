@@ -128,19 +128,36 @@ body {
 }
 
 
-/* Profile Section Styles */
 .profile {
     display: flex;
-    background-image: url("https://images3.alphacoders.com/830/83067.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("https://images3.alphacoders.com/830/83067.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
     flex-direction: column;
-    height:100vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     text-align: center;
     gap: 2rem;
     margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(var(--accent-rgb), 0.2),
+        rgba(var(--yellow-rgb), 0.2));
+    animation: gradientShift 10s ease infinite;
 }
 
 .profile img {
@@ -149,23 +166,46 @@ body {
     margin-top: -7%;
     border-radius: 50%;
     border: 3px solid var(--accent);
-    animation: borderGlow 3s infinite;
+    animation: borderGlow 3s infinite, float 6s ease-in-out infinite;
     cursor: pointer;
-    transition: transform var(--transition-speed);
+    transition: transform var(--transition-speed), box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .profile img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 0 20px var(--accent);
 }
 
 .profile h1 {
     font-size: 65px;
     font-weight: bold;
-    background: linear-gradient(45deg, var(--yellow), var(--accent));
+    background: linear-gradient(45deg, 
+        var(--yellow) 0%,
+        var(--accent) 50%,
+        var(--yellow) 100%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin-bottom: 1rem;
+    animation: shimmer 3s linear infinite;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes gradientShift {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
 }
 
 .roles {
@@ -457,13 +497,41 @@ body {
     }
 }
 
+@keyframes borderGlow {
+    0%, 100% {
+        border-color: var(--accent);
+        box-shadow: 0 0 10px var(--accent);
+    }
+    50% {
+        border-color: var(--yellow);
+        box-shadow: 0 0 20px var(--yellow);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
 
 /* MOBILRE STUFF */
 
 @media (max-width: 768px) {
 
 
-    /* Profile mobile styles */
     .profile {
         padding: 1rem;
         margin-top: 120px;
@@ -489,7 +557,6 @@ body {
         margin: 0 auto;
     }
 
-    /* About section mobile styles */
     .aboutme-container h1 {
         font-size: 2rem;
         margin: 2rem auto;
@@ -509,7 +576,6 @@ body {
         font-size: 1.5rem;
     }
 
-    /* Projects mobile styles */
     .projects {
         padding: 2rem 1rem;
     }
