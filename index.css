@@ -259,13 +259,14 @@ body {
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    text-align: left;
 }
 
 .abt-section .description {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #ccc;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
