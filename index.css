@@ -228,7 +228,7 @@ body {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    gap: 1rem;
+    gap: 56px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
