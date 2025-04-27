@@ -130,11 +130,10 @@ body {
 
 .profile {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                      url("https://images3.alphacoders.com/830/83067.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url("https://wallpapercat.com/w/full/7/e/2/294031-3840x2160-desktop-4k-los-angeles-background-photo.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     flex-direction: column;
     height: 100vh;
     align-items: center;
@@ -142,10 +141,12 @@ body {
     padding: 2rem;
     text-align: center;
     gap: 2rem;
-    margin-bottom: 4rem;
     position: relative;
     overflow: hidden;
 }
+
+
+
 
 .profile::before {
     content: '';
@@ -207,34 +208,36 @@ body {
         transform: scale(1.1);
     }
 }
-
-.roles {
+.profile .roles {
     display: grid;
-    margin: -15px auto;
+    margin: -25px auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 0.1fr));
     gap: 35px;
     max-width: 1200px;
 }
-
-.role {
-    background: rgba(196, 143, 253, 0.1);
-    padding: 5px 10px;
-    border-radius: 12px;
+.profile .roles .role {
+    background: linear-gradient(135deg, rgba(196, 143, 253, 0.1), rgba(255, 255, 255, 0.05));
+    padding: 0.55rem 1.5rem;
+    width: 245px;
+    border-radius: 20px;
+    margin-top: -10px;
     border: 1px solid rgba(196, 143, 253, 0.2);
-    transition: all var(--transition-speed);
+    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
-    cursor: pointer;
-    width: 220px;
-    text-align: center;
     align-items: center;
+    text-align: center;
+    cursor: pointer;
     gap: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.role:hover {
-    transform: translateY(-5px);
-    background: rgba(196, 143, 253, 0.15);
+.profile .roles .role:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(196, 143, 253, 0.2);
     border-color: var(--accent);
+    box-shadow: 0 12px 25px rgba(196, 143, 253, 0.4);
 }
 
 .role i {
@@ -246,6 +249,14 @@ body {
     color: var(--text-secondary);
     font-size: 1rem;
     font-weight: 500;
+}
+
+.aboutme-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.903)), 
+        url("https://wallpapercat.com/w/full/c/d/8/2158372-3840x2160-desktop-4k-ocean-landscape-background-image.jpg") no-repeat center center / cover;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -345,6 +356,8 @@ body {
 
 .projects {
     padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.864)), 
+    url("https://images4.alphacoders.com/118/1189987.jpg") no-repeat center center / cover;
 
 }
 
