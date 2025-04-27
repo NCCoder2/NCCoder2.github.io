@@ -212,7 +212,7 @@ body {
     display: grid;
     margin: -25px auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 0.1fr));
-    gap: 35px;
+    gap: 56px;
     max-width: 1200px;
 }
 .profile .roles .role {
@@ -228,7 +228,7 @@ body {
     align-items: center;
     text-align: center;
     cursor: pointer;
-    gap: 56px;
+    gap: 1rem;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
